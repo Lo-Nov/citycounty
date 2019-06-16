@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FUSUsageTrigger">
+    <session id="-1193500710">
+      <usages-collector id="statistics.php.composer.actions">
+        <counts>
+          <entry key="install_from_ComposerEditorNotificationPanel" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/storage/framework/views/06581e4a06aa74dec34d804e8bd0ade86dd7d71a.php" />
+    <file url="file://$PROJECT_DIR$/storage/framework/views/3b944a69af7e4a17d1da68af1b8802740edce48a.php" />
+    <file url="file://$PROJECT_DIR$/storage/framework/views/4f0df54188c6963b7097616fae655abda1cb33f0.php" />
+    <file url="file://$PROJECT_DIR$/storage/framework/views/5e676479acbc889d3f6729c69cfb42f87068e5c9.php" />
+    <file url="file://$PROJECT_DIR$/storage/framework/views/719b93c4aa76f177e89e6926d0a510e1ad912f46.php" />
+    <file url="file://$PROJECT_DIR$/storage/framework/views/80927301aed1fb5274a8ad353f20da81c0f1e5e4.php" />
+    <file url="file://$PROJECT_DIR$/storage/framework/views/82cb964e4d3fcbee1e16ed33f1a86197fd8cced1.php" />
+    <file url="file://$PROJECT_DIR$/storage/framework/views/8bfd24eec7288bfee71d7f4761ce87f7f5bb9b5a.php" />
+    <file url="file://$PROJECT_DIR$/storage/framework/views/8e0cee4d33de4a40cf217f7b1f0306cf9e3f8ae3.php" />
+    <file url="file://$PROJECT_DIR$/storage/framework/views/8f2c6d315648ba463b37eae6c93e70a810d28d88.php" />
+    <file url="file://$PROJECT_DIR$/storage/framework/views/a4df0bbb10a04c177101dc9f50ae5f80ad886c35.php" />
+    <file url="file://$PROJECT_DIR$/storage/framework/views/cc6f69b4ec2a495ee552bd25e10be7bba5c123f5.php" />
+    <file url="file://$PROJECT_DIR$/storage/framework/views/f708ca2e4b2b34335ada95bbcf760a87905a56f4.php" />
+  </component>
+</project>
