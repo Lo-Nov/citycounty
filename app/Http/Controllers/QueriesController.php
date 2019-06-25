@@ -3,123 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
 
 class QueriesController extends Controller
 {
-    public function qRange(Request $request){
+    public function filtercompliant(Request $request){
         if (Session::get('resource')[0]['is_login'] != 1) {
             return redirect()->route('login');
         }
-        $url =  'http://102.133.165.199:8086/api/Parking/GetDetailedParkingEnforcementQueries';
-        $user_token=Session::get('resource');
-        //dd($user_token);
-        $send_token = $user_token[0]['token'];
-        //dd($send_token);
-        $fromDate=$request->post("fromDate");
-        //dd($fromDate);
-        $toDate= $request->post('toDate');
-        $data = [
-                "subcounty"=> "ALL",
-                "zone"=> "ALL",
-                "page"=>0,
-                "attendant"=> 0,
-                "street"=> "ALL",
-                'date_from' =>  $fromDate,
-                'date_to' =>  $toDate,
-        ];
-        $header =$send_token;
-        //dd($data);
-        $this->data['qRange']=json_decode($this->to_curl($url, $data, $header));
 
-        $this->data1['queried']= $this->data['qRange']->response_data;
-        // dd($this->data1['cZones']->collection_list[0]->par2);
-        //dd($this->data1['queried']);
-
-        //return $request->all();
-        return view('queried.queried')->with($this->data1);
-
-
-    }
-
-    public function attRange(Request $request){
-        if (Session::get('resource')[0]['is_login'] != 1) {
-            return redirect()->route('login');
-        }
-        $url =  'http://102.133.165.199:8086/api/Parking/GetDetailedParkingEnforcementQueries';
-        $user_token=Session::get('resource');
-        //dd($user_token);
-        $send_token = $user_token[0]['token'];
-        //dd($send_token);
-        $fromDate=$request->post("fromDate");
-        //dd($fromDate);
-        $toDate= $request->post('toDate');
-        $data = [
-            "subcounty"=> "ALL",
-            "zone"=> "ALL",
-            "attendant"=> 0,
-            "street"=> "ALL",
-            'date_from' =>  $fromDate,
-            'date_to' =>  $toDate,
-        ];
-        $header =$send_token;
-        //dd($data);
-        $this->data['qRange']=json_decode($this->to_curl($url, $data, $header));
-
-        $this->data1['queried']= $this->data['qRange']->response_data;
-        // dd($this->data1['cZones']->collection_list[0]->par2);
-        //dd($this->data1['queried']);
-
-        //return $request->all();
-        return view('queried.attQueries')->with($this->data1);
-    }
-
-    public function searchpaid(Request $request){
-        if (Session::get('resource')[0]['is_login'] != 1) {
-            return redirect()->route('login');
-        }
-        $keyword = $request->keyword;
+        $this->url = config('global.url');
+        $url=$this->url. 'api/Parking/GetParkingsToEnforcePaginated';
+        //$keyword = $request->keyword;
         //return $keyword;
 
-        $url =  'http://102.133.165.199:8086/api/Parking/GetParkingsToEnforcePaginated';
-        $user_token=Session::get('resource');
-        //dd($user_token);
-        $send_token = $user_token[0]['token'];
-        //dd($send_token);
-        $fromDate=$request->post("fromDate");
-        //dd($fromDate);
-        $toDate= $request->post('toDate');
-        $data = [
-            "enforce_type"=> "PAID",
-            "street"=> "",
-            "keyword"=>$keyword,
-            "page"=>1,
-            "date_from"=>$fromDate,
-            "date_to"=> $toDate
-        ];
-        $header =$send_token;
-        //dd($data);
-        $this->data1['paid']=json_decode($this->to_curl($url, $data, $header));
-
-        $this->data['paid']=$this->data1['paid']->response_data;
-        //dd($this->data['paid']);
-
-        if (empty( $this->data['paid']->paginatedList)){
-            return redirect()->back();
-        }else{
-            if (!empty($this->data['paid']->paginatedList)){
-                return view('paid.paid1')->with($this->data);
-            }
-        }
-    }
-    public function pRange(Request $request){
-        if (Session::get('resource')[0]['is_login'] != 1) {
-            return redirect()->route('login');
-        }
-
-        $id = $request->id;
-        $url =  'http://102.133.165.199:8086/api/Parking/GetParkingsToEnforcePaginated';
         $user_token=Session::get('resource');
         //dd($user_token);
         $send_token = $user_token[0]['token'];
@@ -131,32 +28,75 @@ class QueriesController extends Controller
             "enforce_type"=> "PAID",
             "street"=> "",
             "keyword"=>"",
+            "page"=>1,
+            "date_from"=>$fromDate,
+            "date_to"=> $toDate
+        ];
+        $header =$send_token;
+       //dd($data);
+
+        $this->data1['compliant']=json_decode($this->to_curl($url, $data, $header));
+
+        $this->data['compliant']=$this->data1['compliant']->response_data;
+        //dd($this->data['compliant']);
+
+        if (empty( $this->data['compliant']->paginatedList)){
+            return view('compliant.compliant')->with($this->data);
+        }else{
+            if (!empty($this->data['compliant']->paginatedList)){
+                return view('compliant.compliant')->with($this->data);
+            }
+        }
+    }
+    public function filternoncompliant(Request $request){
+        if (Session::get('resource')[0]['is_login'] != 1) {
+            return redirect()->route('login');
+        }
+        //$id = $request->keyword;
+        $this->url = config('global.url');
+        $url=$this->url. 'api/Parking/GetParkingsToEnforcePaginated';
+
+
+        $user_token=Session::get('resource');
+        //dd($user_token);
+        $send_token = $user_token[0]['token'];
+        //dd($send_token);
+        $fromDate=$request->post("fromDate");
+        //dd($fromDate);
+        $toDate= $request->post('toDate');
+        $data = [
+            "enforce_type"=> "CLAMP",
+            "street"=> "",
+            "keyword"=>"",
             "page"=>0,
             "date_from"=>$fromDate,
             "date_to"=> $toDate
         ];
         $header =$send_token;
         //dd($data);
-        $this->data1['paid']=json_decode($this->to_curl($url, $data, $header));
+        $this->data1['noncompliant']=json_decode($this->to_curl($url, $data, $header));
 
-        $this->data['paid']=$this->data1['paid']->response_data;
-       //dd($this->data['paid']);
+        $this->data['noncompliant']=$this->data1['noncompliant']->response_data;
+        //dd($this->data['noncompliant']);
 
-        if (empty( $this->data['paid']->paginatedList)){
-            return redirect()->route('dashboard');
+        if (empty( $this->data['noncompliant']->paginatedList)){
+            return redirect()->back();
         }else{
-            if (!empty($this->data['paid']->paginatedList)){
-                return view('paid.paid1')->with($this->data);
+            if (!empty($this->data['noncompliant']->paginatedList)){
+                return view('noncompliant.noncompliant')->with($this->data);
             }
         }
-        //return $request->all();
-    }
 
-    public function clampedRange(Request $request){
+    }
+    public function filterclamped(Request $request){
         if (Session::get('resource')[0]['is_login'] != 1) {
             return redirect()->route('login');
         }
-        $url =  'http://102.133.165.199:8086/api/Parking/GetParkingsToEnforce';
+
+        //$id = $request->keyword;
+        $this->url = config('global.url');
+        $url=$this->url. 'api/Parking/GetParkingsToEnforcePaginated';
+
         $user_token=Session::get('resource');
         //dd($user_token);
         $send_token = $user_token[0]['token'];
@@ -168,73 +108,35 @@ class QueriesController extends Controller
             "enforce_type"=> "CLAMPED",
             "street"=> "",
             "keyword"=>"",
-            "date_from"=>$fromDate,
-            "date_to"=> $toDate
-        ];
-        $header =$send_token;
-        //dd($data);
-        $this->data['clampedRange']=json_decode($this->to_curl($url, $data, $header));
-        //dd($this->data['clampedRange']);
-        // $this->data1['paid']= $this->data['pRange']->response_data;
-        // dd($this->data1['cZones']->collection_list[0]->par2);
-
-        //return $request->all();
-
-        if ($this->data['clampedRange']->status_code == 200){
-            return view('clamped.clampedQuery')->with($this->data);
-        }else{
-            return view('errors.clampQ')->with($this->data);
-        }
-
-
-
-
-    }
-
-    public function clampRange(Request $request){
-        if (Session::get('resource')[0]['is_login'] != 1) {
-            return redirect()->route('login');
-        }
-
-        $id = $request->keyword;
-        $url =  'http://102.133.165.199:8086/api/Parking/GetParkingsToEnforcePaginated';
-        $user_token=Session::get('resource');
-        //dd($user_token);
-        $send_token = $user_token[0]['token'];
-        //dd($send_token);
-        $fromDate=$request->post("fromDate");
-        //dd($fromDate);
-        $toDate= $request->post('toDate');
-        $data = [
-            "enforce_type"=> "CLAMP",
-            "street"=> "",
-            "keyword"=>$id,
             "page"=>0,
             "date_from"=>$fromDate,
             "date_to"=> $toDate
         ];
         $header =$send_token;
+
         //dd($data);
-        $this->data1['unpaid']=json_decode($this->to_curl($url, $data, $header));
+        $this->data1['clamped']=json_decode($this->to_curl($url, $data, $header));
+       //dd($this->data['clamped']);
+        $this->data['clamped']= $this->data1['clamped']->response_data;
+        //dd( $this->data['clamped']);
+        //return $request->all();
 
-        $this->data['unpaid']=$this->data1['unpaid']->response_data;
-        //dd($this->data['unpaid']);
-
-        if (empty( $this->data['unpaid']->paginatedList)){
+        if (empty( $this->data['clamped']->paginatedList)){
             return redirect()->back();
         }else{
-            if (!empty($this->data['unpaid']->paginatedList)){
-                return view('unpaid.unpaid')->with($this->data);
+            if (!empty($this->data['clamped']->paginatedList)){
+                return view('clamped.clamped')->with($this->data);
             }
         }
 
     }
-
-    public function unclampRange(Request $request){
+    public function filtertounclamp(Request $request){
         if (Session::get('resource')[0]['is_login'] != 1) {
             return redirect()->route('login');
         }
-        $url =  'http://102.133.165.199:8086/api/Parking/GetParkingsToEnforce';
+        $this->url = config('global.url');
+        $url=$this->url. 'api/Parking/GetParkingsToEnforcePaginated';
+
         $user_token=Session::get('resource');
         //dd($user_token);
         $send_token = $user_token[0]['token'];
@@ -246,29 +148,32 @@ class QueriesController extends Controller
             "enforce_type"=> "UNCLAMP",
             "street"=> "",
             "keyword"=>"",
+            "page"=>0,
             "date_from"=>$fromDate,
             "date_to"=> $toDate
         ];
         $header =$send_token;
         //dd($data);
-        $this->data['unclampRange']=json_decode($this->to_curl($url, $data, $header));
-        //dd($this->data['unclampRange']);
+        $this->data1['tounclamp']=json_decode($this->to_curl($url, $data, $header));
+        $this->data['tounclamp']= $this->data1['tounclamp']->response_data;
 
-        if ($this->data['unclampRange']->status_code == 200){
-            return view('dueUnclamp.unclampQuery')->with($this->data);
+        //dd($this->data['tounclamp']);
+        if (empty( $this->data['tounclamp']->paginatedList)){
+            return view('tounclamp.tounclamp')->with($this->data);
         }else{
-            return view('errors.unclampError')->with($this->data);
+            if (!empty($this->data['tounclamp']->paginatedList)){
+                return view('tounclamp.tounclamp')->with($this->data);
+            }
         }
-        //return $request->all();
-
 
     }
-
-    public function unclampedRange(Request $request){
+    public function filterunclamped(Request $request){
         if (Session::get('resource')[0]['is_login'] != 1) {
             return redirect()->route('login');
         }
-        $url =  'http://102.133.165.199:8086/api/Parking/GetParkingsToEnforce';
+        $this->url = config('global.url');
+        $url=$this->url. 'api/Parking/GetParkingsToEnforcePaginated';
+
         $user_token=Session::get('resource');
         //dd($user_token);
         $send_token = $user_token[0]['token'];
@@ -280,23 +185,133 @@ class QueriesController extends Controller
             "enforce_type"=> "UNCLAMPED",
             "street"=> "",
             "keyword"=>"",
+            "page"=>0,
             "date_from"=>$fromDate,
             "date_to"=> $toDate
         ];
         $header =$send_token;
         //dd($data);
-        $this->data['unclampedRange']=json_decode($this->to_curl($url, $data, $header));
-       // dd($this->data['unclampedRange']);
+        $this->data1['unclamped']=json_decode($this->to_curl($url, $data, $header));
+        // dd($this->data['unclampedRange']);
+        $this->data['unclamped']= $this->data1['unclamped']->response_data;
 
-        if ($this->data['unclampedRange']->status_code == 200){
-            return view('unclamped.unclampedQuery')->with($this->data);
+        //dd($this->data['unclamped']);
+        if (empty( $this->data['unclamped']->paginatedList)){
+            return view('unclamped.unclamped')->with($this->data);
         }else{
-            return view('errors.unclampedError')->with($this->data);
+            if (!empty($this->data['unclamped']->paginatedList)){
+                return view('unclamped.unclamped')->with($this->data);
+            }
         }
-        //return $request->all();
     }
+    public function filteroffstreet(Request $request){
+        if (Session::get('resource')[0]['is_login'] != 1) {
+            return redirect()->route('login');
+        }
+        $this->url = config('global.url');
+        $url=$this->url. 'api/Parking/GetParkingsToEnforcePaginated';
+
+        $user_token=Session::get('resource');
+        //dd($user_token);
+        $send_token = $user_token[0]['token'];
+        //dd($send_token);
+        $fromDate=$request->post("fromDate");
+        //dd($fromDate);
+        $toDate= $request->post('toDate');
+        $data = [
+            "enforce_type"=> "PAID",
+            "street"=> "",
+            "keyword"=>"",
+            "page"=>0,
+            "duration_code_filter"=> "HOURLY",
+            "date_from"=>$fromDate,
+            "date_to"=> $toDate
+        ];
+        $header =$send_token;
+        //dd($data);
+        $this->data1['offstreet']=json_decode($this->to_curl($url, $data, $header));
+        // dd($this->data['offstreet']);
+        $this->data['offstreet']= $this->data1['offstreet']->response_data;
+
+        //dd($this->data['offstreet']);
+        if (empty( $this->data['offstreet']->paginatedList)){
+            return view('offstreet.offstreet')->with($this->data);
+        }else{
+            if (!empty($this->data['offstreet']->paginatedList)){
+                return view('offstreet.offstreet')->with($this->data);
+            }
+        }
+    }
+    public function filterqueries(Request $request){
+        if (Session::get('resource')[0]['is_login'] != 1) {
+            return redirect()->route('login');
+        }
+        $this->url = config('global.url');
+        $url=$this->url. 'api/Parking/GetDetailedParkingEnforcementQueries';
+
+        $user_token=Session::get('resource');
+        //dd($user_token);
+        $send_token = $user_token[0]['token'];
+        //dd($send_token);
+        //$subcounties = $request->post("subcounties");
+        $zones = $request->post("zones");
+        $streets = $request->post("streets");
+        $agents = $request->post("agents");
+        $fromDate=$request->post("fromDate");
+        $toDate= $request->post('toDate');
+        $data = [
+            "zone"=> $zones,
+            "page"=> 0,
+            "attendant"=> $agents,
+            "street"=> $streets,
+            'date_from' =>  $fromDate,
+            'date_to' =>  $toDate
+        ];
+        //dd($data);
+        $header =$send_token;
+        $this->data1['queries']=json_decode($this->to_curl($url, $data, $header));
+        $this->data['queries']= $this->data1['queries']->response_data;
+        //dd($this->data1['queries']);
+        return view('queries.queries')->with($this->data);
+        //return view('collection.daterangecollections')->with($this->data1);
+    }
+    public function filterwaiver(Request $request){
+        if (Session::get('resource')[0]['is_login'] != 1) {
+            return redirect()->route('login');
+        }
+
+        $this->url = config('global.url');
+        $url=$this->url. 'api/Parking/GetParkingsToEnforcePaginated';
+        $fromDate=$request->post("fromDate");
+        //dd($fromDate);
+        $toDate= $request->post('toDate');
+        $user_token=Session::get('resource');
+        //dd($user_token);
+        $send_token = $user_token[0]['token'];
+        //dd($send_token);
+        $data = [
+            "enforce_type"=> "WAIVER",
+            "street"=> "",
+            "keyword"=>"",
+            "page"=> 1,
+            "date_from"=>$fromDate,
+            "date_to"=> $toDate
+        ];
+        $header =$send_token;
+        $this->data['waiver']=json_decode($this->to_curl($url, $data, $header));
+        $this->data1['cWaiver']= $this->data['waiver']->response_data;
+        //dd($this->data1['cWaiver']);
+
+        if (empty($this->data1['cWaiver'])){
+            return view('waiver.waiver')->with($this->data1);
+        }else{
+            if (!empty($this->data1['cWaiver'])){
+                return view('waiver.waiver')->with($this->data1);
+            }
+        }
 
 
+    }
     public function to_curl($url, $data, $header)
     {
         $headers = array(

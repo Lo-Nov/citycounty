@@ -8,8 +8,9 @@ use Illuminate\Support\Facades\Session;
 
 class CustomLoginController extends Controller
 {
-    public function loginCustom(Request $request){
-        $url=  'http://102.133.165.199:8086/api/Account/GetToken';
+    public function nailogin(Request $request){
+        $this->url = config('global.url');
+        $url=$this->url. 'api/Account/GetToken';
 
         $username=$request->post("email");
         $password= $request->post('password');
@@ -17,49 +18,49 @@ class CustomLoginController extends Controller
             'user_name'=>$username,
             'password'=>$password
         );
+        //dd($data);
         // echo '<pre>'; print_r($data) ;
         $data = json_decode(stripslashes($this->to_curl($url,$data)));
-        // echo '<pre>'; print_r($data ) ; exit;
-//dd($data);
+        //dd($data);
+
         if (empty($data)) {
             return Redirect::back()->withErrors(['There is a technical error encountered, Please try again ']);
         }else{
             if(!empty($data)) {
                 if($data->status_code == 200 && $data->roles == "PARKINGADMIN" or $data->roles == "GOV" or $data->roles == "DEMO"){
-            $product =collect([
-                'is_login'=>1,
-                'test' => $data->username,
-                'token' => $data->token,
-                'roles' => $data->roles,
-                'username' =>$data->username,
-            ]);
+                    $product =collect([
+                        'is_login'=>1,
+                        'test' => $data->username,
+                        'token' => $data->token,
+                        'roles' => $data->roles,
+                        'username' =>$data->username,
+                    ]);
 
-            //dd($product);
-            Session::push('resource', $product);
-            return redirect()->route('dashboard');
+                    //dd($product);
+                    Session::push('resource', $product);
+                    return redirect()->route('dashboard');
 
-        }elseif ($data->status_code ==200 && $data->roles=="PARKINGENFORCEMENT"){
+                }elseif ($data->status_code ==200 && $data->roles=="UBPADMIN"){
 
-            $product =collect([
-                'is_login'=>1,
-                'test' => $data->username,
-                'token' => $data->token,
-                'roles' => $data->roles,
-                'username' =>$data->username,
-            ]);
-            Session::flush();
+                    $product =collect([
+                        'is_login'=>1,
+                        'test' => $data->username,
+                        'token' => $data->token,
+                        'roles' => $data->roles,
+                        'username' =>$data->username,
+                    ]);
+                    Session::flush();
 
-            Session::push('resource', $product);
-            return redirect()->route('agent');
+                    Session::push('resource', $product);
+                    return redirect()->route('permits');
 
-        }else{
-            return Redirect::back()->withErrors(['Your username or password incorrect. Please try again', 'The Message']);
-        }
+                }else{
+                    return Redirect::back()->withErrors(['Your username or password incorrect. Please try again', 'The Message']);
+                }
             }
         }
-        
-
     }
+
     function to_curl($url, $data)
     {
 
@@ -68,7 +69,6 @@ class CustomLoginController extends Controller
             'Content-Type: application/json',
             'Content-Length: ' . strlen( json_encode($data) )
         );
-
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
@@ -80,8 +80,6 @@ class CustomLoginController extends Controller
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
         $output = curl_exec($ch);
-
-
         $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
         /*if($httpcode != 200)
             {
@@ -93,4 +91,6 @@ class CustomLoginController extends Controller
         return $output;
 
     }
+
+
 }

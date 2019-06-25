@@ -10,15 +10,110 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+//login-custom
+Route::post('/nailogin','CustomLoginController@nailogin')->name('nailogin');
+Route::get('/dashboard','DashboardController@index')->name('dashboard');
+Route::get('/compliant','DashboardController@compliant')->name('compliant');
+Route::get('/noncompliant','DashboardController@noncompliant')->name('noncompliant');
+Route::get('/clamped','DashboardController@clamped')->name('clamped');
+Route::get('/tounclamp','DashboardController@tounclamp')->name('tounclamp');
+Route::get('/unclamped','DashboardController@unclamped')->name('unclamped');
+//Seasonal
+Route::get('/seasonal','DashboardController@seasonal')->name('seasonal');
+//offstreet
+Route::get('/offstreet','DashboardController@offstreet')->name('offstreet');
+//Queries
+Route::get('/queries','DashboardController@queries')->name('queries');
+//collections
+Route::get('/collections', 'DashboardController@collections')->name('collections');
+//byagent
+Route::get('/byagent', 'DashboardController@byagent')->name('byagent');
+//view
+Route:: get('/view/{id}', 'DashboardController@view')->name('view');
+//viewday
+Route:: get('/viewday/{id}', 'DashboardController@viewday')->name('viewday');
+//viewzone
+Route:: get('/viewzone/{id}', 'DashboardController@viewzone')->name('viewzone');
+//viewstreet
+Route:: get('/viewstreet/{id}', 'DashboardController@viewstreet')->name('viewstreet');
+//logs
+Route::get('/logs', 'DashboardController@logs')->name('logs');
+//plate
+Route:: get('/plate/{id}', 'DashboardController@plate')->name('plate');
+Route::get('/waiver','DashboardController@waiver')->name('waiver');
+Route::get('/remark/{id}/{description}','DashboardController@remark')->name('remark');
+Route::post('/postwaiver','DashboardController@postwaiver')->name('postwaiver');
+//compliant search
+Route::post('/filtercompliant','QueriesController@filtercompliant')->name('filtercompliant');
+//noncompliant
+Route::post('/filternoncompliant','QueriesController@filternoncompliant')->name('filternoncompliant');
+//filterclamped
+Route::post('/filterclamped','QueriesController@filterclamped')->name('filterclamped');
+//filtertounclamp
+Route::post('/filtertounclamp','QueriesController@filtertounclamp')->name('filtertounclamp');
+//unclampedRange
+Route::post('/filterunclamped','QueriesController@filterunclamped')->name('filterunclamped');
+//filteroffstreet
+Route::post('/filteroffstreet','QueriesController@filteroffstreet')->name('filteroffstreet');
+
+Route::post('/filterqueries','QueriesController@filterqueries')->name('filterqueries');
+//filterwaiver
+Route::post('/filterwaiver','QueriesController@filterwaiver')->name('filterwaiver');
+
+Route::get('/test', function () {
+    return view('test.text');
+});
+
+//UBP
+Route::get('/permits','PermitsController@index')->name('permits');
+//newapplications
+Route::get('/newapplications','PermitsController@newapplications')->name('newapplications');
+//renewals
+Route::get('/renewals','PermitsController@renewals')->name('renewals');
+//invoices
+Route::get('/invoices','PermitsController@invoices')->name('invoices');
+//receipts
+Route::get('/receipts','PermitsController@receipts')->name('receipts');
+//summaries
+Route::get('/summaries','PermitsController@summaries')->name('summaries');
+Route:: get('/test/{id}', 'PermitsController@test')->name('test');
+Route::post('/statechange','PermitsController@statechange')->name('statechange');
+Route::get('/details','PermitsController@details')->name('details');
+Route::post('/sbpdetails','PermitsController@sbpdetails')->name('sbpdetails');
+//toinspect
+Route::get('/approve','PermitsController@approve')->name('approve');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('/dashboard','DashboardController@index')->name('dashboard');
-
 Route::get('/agent','DashboardController@agent')->name('agent');
 
 //Vquarried vehicles
-Route::get('/queries','DashboardController@queried')->name('queries');
+
 Route::get('/queriedAgent-vehicle','DashboardController@queriedAgent')->name('queriedAgent.index');
 //qRange
 Route::post('/qRange','QueriesController@qRange')->name('qRange');
@@ -73,8 +168,11 @@ Route::get('/untowedAgent','DashboardController@untowedAgent')->name('untowedAge
 //seasonal
 Route::get('/seasonal','DashboardController@seasonal')->name('seasonal');
 Route::get('/seasonalAgent','DashboardController@seasonalAgent')->name('seasonalAgent');
-//login-custom
-Route::post('/login-custom','CustomLoginController@loginCustom')->name('login.custom');
+
+Route::post('/offsearch','DashboardController@offsearch')->name('offsearch');
+
+
+
 //Finance
 Route::get('/finance','DashboardController@finance')->name('finance');
 
@@ -105,32 +203,28 @@ Route::post('/streetrange', 'FilterController@streetrange')->name('streetrange')
 Route::post('/streetrangeadmin', 'FilterController@streetrangeadmin')->name('streetrangeadmin');
 
 
-//collections
-Route::get('/collections', 'DashboardController@collections')->name('collections');
+
 Route::get('/dcollections', 'DetailedController@dcollections')->name('dcollections');
 //fVehicles
 Route::post('/fVehicles', 'FilterController@fVehicles')->name('fVehicles');
-//view
-Route:: get('/view/{id}', 'DashboardController@view')->name('view');
-//viewday
-Route:: get('/viewday/{id}', 'DashboardController@viewday')->name('viewday');
+Route::post('/seasonalsearch', 'FilterController@seasonalsearch')->name('seasonalsearch');
 
-//viewzone
-Route:: get('/viewzone/{id}', 'DashboardController@viewzone')->name('viewzone');
+//view
+
+
+
 
 //plate
 Route:: get('/plate/{id}', 'DashboardController@plate')->name('plate');
 
 
-//viewstreet
-Route:: get('/viewstreet/{id}', 'DashboardController@viewstreet')->name('viewstreet');
+
 Route:: get('/pages/{id}', 'DashboardController@pages')->name('pages');
 Route:: get('/unpages/{id}', 'DashboardController@unpages')->name('unpages');
 Route:: get('/cpages/{id}', 'DashboardController@cpages')->name('cpages');
 Route:: get('/dpages/{id}', 'DashboardController@dpages')->name('dpages');
 Route:: get('/querypages/{id}', 'DashboardController@querypages')->name('querypages');
-
-
+Route:: get('/seasonalpages/{id}', 'DashboardController@seasonalpages')->name('seasonalpages');
 
 
 //Histoy
@@ -150,15 +244,11 @@ Route::post('/cZonerange', 'FilterController@cZonerange')->name('cZonerange');
 Route::post('/detaildate', 'DetailedController@detaildate')->name('detaildate');
 
 Route::post('/detailed','DetailedController@detailed')->name('detailed');
-//waiver
-Route::get('/waiver','DetailedController@waiver')->name('waiver');
+
 Route::get('/remark/{id}/{description}','DashboardController@remark')->name('remark');
 Route::post('/postWeiver','DashboardController@postWeiver')->name('postWeiver');
 
-
-
-
-
+Route::get('querypages/{id}/{from}/{to}', 'DashboardController@querypages')->name('querypages');
 
 Auth::routes();
 
