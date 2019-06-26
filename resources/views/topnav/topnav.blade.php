@@ -6,11 +6,11 @@
     </li>
     <!-- END TOGGLE NAVIGATION -->
     <!-- SEARCH -->
-    <li class="xn-search">
+    <!--<li class="xn-search">
         <form role="form">
             <input type="text" name="search" placeholder="Search..."/>
         </form>
-    </li>
+    </li>-->
     <!-- END SEARCH -->
     <!-- SIGN OUT -->
     <li class="xn-icon-button pull-right">

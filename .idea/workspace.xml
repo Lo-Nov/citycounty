@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d46ec8da-3fae-4968-92dc-2544527b7f98" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomLoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomLoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PermitsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PermitsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QueriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QueriesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/global.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/global.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/collections/collections.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/collections/collections.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/topnav/topnav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/topnav/topnav.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,33 +39,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="179">
-      <file leaf-file-name="DashboardController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DashboardController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+            <state relative-caret-position="532">
+              <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
               <folding>
                 <element signature="e#39#59#0#PHP" expanded="true" />
-                <element signature="e#1827#3025#0#PHP" />
-                <element signature="e#3030#4224#0#PHP" />
-                <element signature="e#4229#5403#0#PHP" />
-                <element signature="e#5408#6609#0#PHP" />
-                <element signature="e#6614#7817#0#PHP" />
-                <element signature="e#7822#11344#0#PHP" />
-                <element signature="e#11349#12632#0#PHP" />
-                <element signature="e#12637#13881#0#PHP" />
-                <element signature="e#13886#16137#0#PHP" />
-                <element signature="e#16142#19174#0#PHP" />
-                <element signature="e#19179#20075#0#PHP" />
-                <element signature="e#20080#20975#0#PHP" />
-                <element signature="e#20980#21849#0#PHP" />
-                <element signature="e#21854#22732#0#PHP" />
-                <element signature="e#22737#23913#0#PHP" />
-                <element signature="e#23918#24698#0#PHP" />
-                <element signature="e#24703#25815#0#PHP" />
-                <element signature="e#25820#26101#0#PHP" />
-                <element signature="e#26106#27281#0#PHP" />
+                <element signature="e#26128#27304#0#PHP" />
                 <element signature="e#27286#28318#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/global.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="collections.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/collections/collections.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1197">
+              <caret line="66" column="64" selection-start-line="66" selection-start-column="64" selection-end-line="66" selection-end-column="103" />
+              <folding>
+                <element signature="e#4389#4428#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,29 +100,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebar.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/sidebar/sidebar.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="129" column="208" selection-start-line="129" selection-start-column="208" selection-end-line="129" selection-end-column="208" />
-              <folding>
-                <element signature="e#8893#9203#0#HTML" />
-                <element signature="n#li#13;n#ul#0;n#div#0;n#!!top" />
-                <element signature="n#li#14;n#ul#0;n#div#0;n#!!top" />
-                <element signature="n#li#15;n#ul#0;n#div#0;n#!!top" />
-                <element signature="n#li#16;n#ul#0;n#div#0;n#!!top" />
-                <element signature="n#li#17;n#ul#0;n#div#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="topnav.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="topnav.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/topnav/topnav.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+            <state relative-caret-position="152">
+              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
               <folding>
+                <element signature="e#327#480#0#HTML" />
                 <element signature="e#727#3043#0#HTML" />
                 <element signature="e#3092#5891#0#HTML" />
                 <element signature="n#div#1;n#div#1;n#li#4;n#ul#0;n#!!top" />
@@ -130,26 +122,6 @@
               <caret line="79" column="63" lean-forward="true" selection-start-line="77" selection-start-column="56" selection-end-line="79" selection-end-column="63" />
               <folding>
                 <element signature="e#6488#6525#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QueriesController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QueriesController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="302" column="10" selection-start-line="302" selection-start-column="10" selection-end-line="302" selection-end-column="10" />
-              <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
-                <element signature="e#159#1544#0#PHP" />
-                <element signature="e#1549#2903#0#PHP" />
-                <element signature="e#2908#4292#0#PHP" />
-                <element signature="e#4297#5618#0#PHP" />
-                <element signature="e#5623#6991#0#PHP" />
-                <element signature="e#6996#8401#0#PHP" />
-                <element signature="e#8408#9729#0#PHP" />
-                <element signature="e#9735#10767#0#PHP" />
               </folding>
             </state>
           </provider>
@@ -172,8 +144,8 @@
       <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+            <state relative-caret-position="217">
+              <caret line="27" column="73" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -201,8 +173,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>weiver</find>
-      <find>Today</find>
       <find>joli</find>
       <find>paid</find>
       <find>928</find>
@@ -231,6 +201,8 @@
       <find>logs</find>
       <find>.login-container .login-box .login-logo</find>
       <find>test</find>
+      <find>coll</find>
+      <find>colle</find>
     </findStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\parking</dir>
@@ -257,9 +229,7 @@
         <option value="$PROJECT_DIR$/resources/views/paid/paid1.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/DetailedController.php" />
         <option value="$PROJECT_DIR$/resources/views/breadcrumb/breadcrumb.blade.php" />
-        <option value="$PROJECT_DIR$/config/global.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/collections/collections.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/agent/hourly.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/agent/days.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/agent/zones.blade.php" />
@@ -296,13 +266,15 @@
         <option value="$PROJECT_DIR$/resources/views/waiver/waiver.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/QueriesController.php" />
         <option value="$PROJECT_DIR$/resources/views/sidebar/sidebar.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/seasonal/seasonal.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/tounclamp/tounclamp.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/compliant/compliant.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/unclamped/unclamped.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/collections/collections.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/topnav/topnav.blade.php" />
+        <option value="$PROJECT_DIR$/config/global.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" />
       </list>
     </option>
   </component>
@@ -454,6 +426,11 @@
             <path>
               <item name="citycounty" type="b2602c69:ProjectViewProjectNode" />
               <item name="citycounty" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="citycounty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="citycounty" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -461,6 +438,13 @@
               <item name="citycounty" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="citycounty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="citycounty" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="collections" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="citycounty" type="b2602c69:ProjectViewProjectNode" />
@@ -661,7 +645,7 @@
       <workItem from="1561221283923" duration="13383000" />
       <workItem from="1561275929345" duration="13339000" />
       <workItem from="1561293773307" duration="53240000" />
-      <workItem from="1561438684856" duration="43112000" />
+      <workItem from="1561438684856" duration="45857000" />
     </task>
     <task id="LOCAL-00001" summary="Some changes on some files">
       <created>1556362819880</created>
@@ -779,7 +763,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="659625000" />
+    <option name="totallyTimeSpent" value="662370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -1029,13 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/global.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -1079,13 +1056,6 @@
             <element signature="e#7618#7793#1#HTML" />
             <element signature="e#7798#8488#1#HTML" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/collections/collections.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1235">
-          <caret line="31" column="146" selection-end-line="145" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1243,13 +1213,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/sidebar/sidebar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -1271,36 +1234,6 @@
           <caret line="208" column="160" selection-start-line="208" selection-start-column="160" selection-end-line="208" selection-end-column="160" />
           <folding>
             <element signature="e#18036#18732#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-          <folding>
-            <element signature="e#39#59#0#PHP" expanded="true" />
-            <element signature="e#1827#3025#0#PHP" />
-            <element signature="e#3030#4224#0#PHP" />
-            <element signature="e#4229#5403#0#PHP" />
-            <element signature="e#5408#6609#0#PHP" />
-            <element signature="e#6614#7817#0#PHP" />
-            <element signature="e#7822#11344#0#PHP" />
-            <element signature="e#11349#12632#0#PHP" />
-            <element signature="e#12637#13881#0#PHP" />
-            <element signature="e#13886#16137#0#PHP" />
-            <element signature="e#16142#19174#0#PHP" />
-            <element signature="e#19179#20075#0#PHP" />
-            <element signature="e#20080#20975#0#PHP" />
-            <element signature="e#20980#21849#0#PHP" />
-            <element signature="e#21854#22732#0#PHP" />
-            <element signature="e#22737#23913#0#PHP" />
-            <element signature="e#23918#24698#0#PHP" />
-            <element signature="e#24703#25815#0#PHP" />
-            <element signature="e#25820#26101#0#PHP" />
-            <element signature="e#26106#27281#0#PHP" />
-            <element signature="e#27286#28318#0#PHP" />
           </folding>
         </state>
       </provider>
@@ -1349,14 +1282,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="27" column="73" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/collections/collections.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1197">
+          <caret line="66" column="64" selection-start-line="66" selection-start-column="64" selection-end-line="66" selection-end-column="103" />
+          <folding>
+            <element signature="e#4389#4428#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/topnav/topnav.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        <state relative-caret-position="152">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
           <folding>
+            <element signature="e#327#480#0#HTML" />
             <element signature="e#727#3043#0#HTML" />
             <element signature="e#3092#5891#0#HTML" />
             <element signature="n#div#1;n#div#1;n#li#4;n#ul#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+          <folding>
+            <element signature="e#39#59#0#PHP" expanded="true" />
+            <element signature="e#26128#27304#0#PHP" />
+            <element signature="e#27286#28318#0#PHP" />
           </folding>
         </state>
       </provider>

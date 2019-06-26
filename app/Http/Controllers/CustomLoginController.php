@@ -10,7 +10,7 @@ class CustomLoginController extends Controller
 {
     public function nailogin(Request $request){
         $this->url = config('global.url');
-        $url=$this->url. 'api/Account/GetToken';
+        $url=$this->url. '/api/Account/GetToken';
 
         $username=$request->post("email");
         $password= $request->post('password');

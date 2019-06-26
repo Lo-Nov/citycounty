@@ -18,7 +18,7 @@ class DashboardController extends Controller
             return redirect()->route('login');
         }
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetDashboardData';
+        $url=$this->url. '/api/Parking/GetDashboardData';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -50,7 +50,7 @@ class DashboardController extends Controller
 
 
 
-       //dd($data);
+      // dd($data);
         return view('welcome')->with('dashboard', ['dashboard' => $data['dashboard'], 'chart' => $chart]);
         //return view('welcome')->with($data);
     }
@@ -62,7 +62,7 @@ class DashboardController extends Controller
         }
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetParkingsToEnforcePaginated';
+        $url=$this->url. '/api/Parking/GetParkingsToEnforcePaginated';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -100,7 +100,7 @@ class DashboardController extends Controller
         }
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetParkingsToEnforcePaginated';
+        $url=$this->url. '/api/Parking/GetParkingsToEnforcePaginated';
 
 
         $user_token=Session::get('resource');
@@ -137,7 +137,7 @@ class DashboardController extends Controller
             return redirect()->route('login');
         }
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetParkingsToEnforcePaginated';
+        $url=$this->url. '/api/Parking/GetParkingsToEnforcePaginated';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -174,7 +174,7 @@ class DashboardController extends Controller
             return redirect()->route('login');
         }
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetParkingsToEnforcePaginated';
+        $url=$this->url. '/api/Parking/GetParkingsToEnforcePaginated';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -213,7 +213,7 @@ class DashboardController extends Controller
             return redirect()->route('login');
         }
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetParkingsToEnforcePaginated';
+        $url=$this->url. '/api/Parking/GetParkingsToEnforcePaginated';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -251,7 +251,7 @@ class DashboardController extends Controller
             return redirect()->route('login');
         }
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetSeasonalParking';
+        $url=$this->url. '/api/Parking/GetSeasonalParking';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -272,7 +272,7 @@ class DashboardController extends Controller
         //dd($this->data['seasonalhourly']);
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetSeasonalParking';
+        $url=$this->url. '/api/Parking/GetSeasonalParking';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -293,7 +293,7 @@ class DashboardController extends Controller
 
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetSeasonalParking';
+        $url=$this->url. '/api/Parking/GetSeasonalParking';
         $user_token=Session::get('resource');
         //dd($user_token);
         $send_token = $user_token[0]['token'];
@@ -315,7 +315,7 @@ class DashboardController extends Controller
 
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetSeasonalParking';
+        $url=$this->url. '/api/Parking/GetSeasonalParking';
         $user_token=Session::get('resource');
         //dd($user_token);
         $send_token = $user_token[0]['token'];
@@ -354,7 +354,7 @@ class DashboardController extends Controller
         }
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetParkingsToEnforcePaginated';
+        $url=$this->url. '/api/Parking/GetParkingsToEnforcePaginated';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -391,7 +391,7 @@ class DashboardController extends Controller
         }
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetDetailedParkingEnforcementQueries';
+        $url=$this->url. '/api/Parking/GetDetailedParkingEnforcementQueries';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -426,7 +426,7 @@ class DashboardController extends Controller
             return redirect()->route('login');
         }
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetCollection';
+        $url=$this->url. '/api/Parking/GetCollection';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -445,7 +445,7 @@ class DashboardController extends Controller
 
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetCollection';
+        $url=$this->url. '/api/Parking/GetCollection';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -463,7 +463,7 @@ class DashboardController extends Controller
         // dd($this->data1['cZones']->collection_list[0]->par2);
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetCollection';
+        $url=$this->url. '/api/Parking/GetCollection';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -488,7 +488,7 @@ class DashboardController extends Controller
         }
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetParkingEnforcementQueries';
+        $url=$this->url. '/api/Parking/GetParkingEnforcementQueries';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -504,7 +504,7 @@ class DashboardController extends Controller
         // dd($this->data);
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetParkingEnforcementQueries';
+        $url=$this->url. '/api/Parking/GetParkingEnforcementQueries';
         $user_token=Session::get('resource');
         //dd($user_token);
         $send_token = $user_token[0]['token'];
@@ -520,7 +520,7 @@ class DashboardController extends Controller
 
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetParkingEnforcementQueries';
+        $url=$this->url. '/api/Parking/GetParkingEnforcementQueries';
         $user_token=Session::get('resource');
         //dd($user_token);
         $send_token = $user_token[0]['token'];
@@ -535,7 +535,7 @@ class DashboardController extends Controller
         //dd($this->data['streets']);
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetParkingEnforcementQueries';
+        $url=$this->url. '/api/Parking/GetParkingEnforcementQueries';
         $user_token=Session::get('resource');
         //dd($user_token);
         $send_token = $user_token[0]['token'];
@@ -550,7 +550,7 @@ class DashboardController extends Controller
         //dd($this->data['days']);
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetParkingEnforcementQueries';
+        $url=$this->url. '/api/Parking/GetParkingEnforcementQueries';
         $user_token=Session::get('resource');
         //dd($user_token);
         $send_token = $user_token[0]['token'];
@@ -575,7 +575,7 @@ class DashboardController extends Controller
 
         //dd($business_id);
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetParkingEnforcementQueries';
+        $url=$this->url. '/api/Parking/GetParkingEnforcementQueries';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -604,7 +604,7 @@ class DashboardController extends Controller
         $business_id = $id;
         //dd($business_id);
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetParkingEnforcementQueries';
+        $url=$this->url. '/api/Parking/GetParkingEnforcementQueries';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -630,7 +630,7 @@ class DashboardController extends Controller
         }
         $business_id = $id;
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetParkingEnforcementQueries';
+        $url=$this->url. '/api/Parking/GetParkingEnforcementQueries';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -657,7 +657,7 @@ class DashboardController extends Controller
         $business_id = $id;
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetParkingEnforcementQueries';
+        $url=$this->url. '/api/Parking/GetParkingEnforcementQueries';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -682,7 +682,7 @@ class DashboardController extends Controller
             return redirect()->route('login');
         }
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetParkingsToEnforcePaginated';
+        $url=$this->url. '/api/Parking/GetParkingsToEnforcePaginated';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -724,7 +724,7 @@ class DashboardController extends Controller
         $Re_No = $id;
         //dd($Re_No);
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetCarProfile';
+        $url=$this->url. '/api/Parking/GetCarProfile';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -749,7 +749,7 @@ class DashboardController extends Controller
         }
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/GetParkingsToEnforcePaginated';
+        $url=$this->url. '/api/Parking/GetParkingsToEnforcePaginated';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -795,7 +795,7 @@ class DashboardController extends Controller
         }
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Parking/WaiverVehicle';
+        $url=$this->url. '/api/Parking/WaiverVehicle';
 
         $user_token=Session::get('resource');
         //dd($user_token);

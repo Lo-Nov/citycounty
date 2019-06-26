@@ -60,6 +60,12 @@
                                                             </tr>
                                                         @endforeach()
                                                         </tbody>
+                                                        <tfooter>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td style="text-align: right; color: #000;">Total Amount : {{ number_format($total,2) }}</td>
+                                                        </tfooter>
                                                     </table>
                                                 </div>
                                                 <div class="tab-pane" id="tab20">
@@ -91,7 +97,14 @@
                                                             </tr>
                                                         @endforeach()
                                                         </tbody>
+                                                        <tfooter>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td>Total Amount : {{ number_format($total,2) }}</td>
+                                                        </tfooter>
                                                     </table>
+
                                                 </div>
                                                 <div class="tab-pane" id="tab21">
                                                     <table id="customers2" class="table datatable">
@@ -121,6 +134,12 @@
                                                             </tr>
                                                         @endforeach()
                                                         </tbody>
+                                                        <tfooter>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td>Total Amount : {{ number_format($total,2) }}</td>
+                                                        </tfooter>
                                                     </table>
                                                 </div>
 

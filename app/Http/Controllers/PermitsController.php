@@ -15,7 +15,7 @@ class PermitsController extends Controller
             return redirect()->route('login');
         }
         $this->url = config('global.url');
-        $url=$this->url. 'api/Sbp/GetDashboardTopData';
+        $url=$this->url. '/api/Sbp/GetDashboardTopData';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -50,7 +50,7 @@ class PermitsController extends Controller
         }
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Sbp/GetUBPInspections';
+        $url=$this->url. '/api/Sbp/GetUBPInspections';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -72,7 +72,7 @@ class PermitsController extends Controller
             return redirect()->route('login');
         }
         $this->url = config('global.url');
-        $url=$this->url. 'api/Sbp/GetUBPInspections';
+        $url=$this->url. '/api/Sbp/GetUBPInspections';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -94,7 +94,7 @@ class PermitsController extends Controller
             return redirect()->route('login');
         }
         $this->url = config('global.url');
-        $url=$this->url. 'api/Sbp/GetUBPInvoices';
+        $url=$this->url. '/api/Sbp/GetUBPInvoices';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -113,7 +113,7 @@ class PermitsController extends Controller
             return redirect()->route('login');
         }
         $this->url = config('global.url');
-        $url=$this->url. 'api/Sbp/GetDashboardTopData';
+        $url=$this->url. '/api/Sbp/GetDashboardTopData';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -133,7 +133,7 @@ class PermitsController extends Controller
             return redirect()->route('login');
         }
         $this->url = config('global.url');
-        $url=$this->url. 'api/Sbp/GetUBPInspections';
+        $url=$this->url. '/api/Sbp/GetUBPInspections';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -150,7 +150,7 @@ class PermitsController extends Controller
 
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Sbp/GetUBPInspections';
+        $url=$this->url. '/api/Sbp/GetUBPInspections';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -167,7 +167,7 @@ class PermitsController extends Controller
 
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Sbp/GetUBPInspections';
+        $url=$this->url. '/api/Sbp/GetUBPInspections';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -184,7 +184,7 @@ class PermitsController extends Controller
 
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Sbp/GetUBPInspections';
+        $url=$this->url. '/api/Sbp/GetUBPInspections';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -201,7 +201,7 @@ class PermitsController extends Controller
 
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Sbp/GetBusinessesToVerify';
+        $url=$this->url. '/api/Sbp/GetBusinessesToVerify';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -224,7 +224,7 @@ class PermitsController extends Controller
         }
         $business_id = $id;
         $this->url = config('global.url');
-        $url=$this->url. 'api/Sbp/GetApprovalCheckList?identifier='.$id;
+        $url=$this->url. '/api/Sbp/GetApprovalCheckList?identifier='.$id;
 
         $user_token=Session::get('resource');
         $data = [];
@@ -241,7 +241,7 @@ class PermitsController extends Controller
         }
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Sbp/UpdateInspectionAndApproval';
+        $url=$this->url. '/api/Sbp/UpdateInspectionAndApproval';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -279,7 +279,7 @@ class PermitsController extends Controller
         }
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Sbp/GetDetailedSBPReport';
+        $url=$this->url. '/api/Sbp/GetDetailedSBPReport';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -315,7 +315,7 @@ class PermitsController extends Controller
         }
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Sbp/GetDetailedSBPReport';
+        $url=$this->url. '/api/Sbp/GetDetailedSBPReport';
 
         $user_token=Session::get('resource');
         //dd($user_token);
@@ -352,7 +352,7 @@ class PermitsController extends Controller
         }
 
         $this->url = config('global.url');
-        $url=$this->url. 'api/Sbp/GetBusinessesToVerify';
+        $url=$this->url. '/api/Sbp/GetBusinessesToVerify';
 
         $user_token=Session::get('resource');
         //dd($user_token);
