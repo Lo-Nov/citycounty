@@ -24,13 +24,17 @@
                                             <form class="date_form_container" method="POST" action="{{ route('filtercompliant') }}">
                                                 @csrf
                                             <ul class="panel-controls panel-controls-title">
-                                                <li>
-                                                    <label for="from"><i class="fa fa-calendar-o"></i> From</label>
-                                                    <input type="text" id="from" name="fromDate">
-                                                    <label for="to"><i class="fa fa-calendar-o"></i> To</label>
-                                                    <input type="text" id="to" name="toDate" class="">
+                                                <li class="row">
+                                                    <div class="form-group d-flex">
+														<label class="col-auto control-label" for="from"><i class="fa fa-calendar-o"></i> From</label>
+                                                   		 <input type="text" id="from" name="fromDate" class="form-control float-left">
+													</div>
+                                                    <div class="ml-2 form-group d-flex">
+														<label class="control-label" for="to"><i class="fa fa-calendar-o"></i> To</label>
+                                                    	<input type="text" id="to" name="toDate" class="form-control col-auto">
+													</div>
                                                 </li>&nbsp;&nbsp;&nbsp;
-                                                <li><button class="" type="submit" ><i class="fa fa-filter"></i> Filter</button></li>
+                                                <li><button class="btn btn-primary " type="submit" ><i class="fa fa-filter"></i> Filter</button></li>
                                             </ul>
                                             </form>
                                             <div class="btn-group">

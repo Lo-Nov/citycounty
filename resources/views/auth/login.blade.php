@@ -23,6 +23,11 @@
         <div class="login-logo"></div>
         <div class="login-body">
             <div class="login-title"><strong>Log In</strong> to your account</div>
+			<div class="profile-image m-5">
+                   <center>
+						 <img src="assets/images/users/avatar.png" height="150px;" class="mb-15" alt="John Doe"/>
+					</center>
+                </div>
             @if($errors->any())
                 <p class="alert alert-danger">{{$errors->first()}}</p>
             @endif
@@ -43,21 +48,11 @@
                         <a href="#" class="btn btn-link btn-block">Forgot your password?</a>
                     </div>
                     <div class="col-md-6">
-                        <button type="submit" class="btn btn-info btn-block">Log In</button>
+                        <button type="submit" class="btn btn-login btn-block">Log In</button>
                     </div>
                 </div>
                 <div class="login-or">OR</div>
-                <div class="form-group">
-                    <div class="col-md-4">
-                        <button class="btn btn-info btn-block btn-twitter"><span class="fa fa-twitter"></span> Twitter</button>
-                    </div>
-                    <div class="col-md-4">
-                        <button class="btn btn-info btn-block btn-facebook"><span class="fa fa-facebook"></span> Facebook</button>
-                    </div>
-                    <div class="col-md-4">
-                        <button class="btn btn-info btn-block btn-google"><span class="fa fa-google-plus"></span> Google</button>
-                    </div>
-                </div>
+                
                 <div class="login-subtitle">
                     Don't have an account yet? <a href="#">Create an account</a>
                 </div>
