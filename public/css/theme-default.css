@@ -456,6 +456,9 @@ body.page-container-boxed .page-container {
 .x-navigation.x-navigation-horizontal > li.xn-openable:before {
   display: none;
 }
+.mCustomScrollBox{
+	background: #215837;
+}
 .x-navigation.x-navigation-horizontal > li > a {
   padding: 15px;
   border-bottom: 0px;

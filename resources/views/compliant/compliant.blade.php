@@ -30,11 +30,11 @@
                                                    		 <input type="text" id="from" name="fromDate" class="form-control float-left">
 													</div>
                                                     <div class="ml-2 form-group d-flex">
-														<label class="control-label" for="to"><i class="fa fa-calendar-o"></i> To</label>
-                                                    	<input type="text" id="to" name="toDate" class="form-control col-auto">
+														<label class="col-auto control-label" for="to"><i class="fa fa-calendar-o"></i> To</label>
+                                                    	<input type="text" id="to" name="toDate" class="form-control">
 													</div>
-                                                </li>&nbsp;&nbsp;&nbsp;
-                                                <li><button class="btn btn-primary " type="submit" ><i class="fa fa-filter"></i> Filter</button></li>
+												</li>
+                                                <li class="ml-2"><button class="btn btn-primary " type="submit" ><i class="fa fa-filter"></i> Filter</button></li>
                                             </ul>
                                             </form>
                                             <div class="btn-group">
