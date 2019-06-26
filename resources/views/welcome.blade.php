@@ -206,7 +206,7 @@
 									<td><span class="label label-success">{{ number_format( $dashboard[ 'dashboard' ]->onstreet_total_revenue,2)  }}</span></td>
 									<td>
 										<div class="">
-											<div class="label label-default"  style="width: 100%;">coming soon</div>
+											<div class="label label-default"  style="width: 100%;">{{ number_format($dashboard['dashboard']->onstreet_total_count) }}</div>
 										</div>
 									</td>
 								</tr>
@@ -242,7 +242,7 @@
 									<td><span class="label label-success">{{ number_format($dashboard[ 'dashboard' ]->seasonal_parking_revenue,2) }}</span></td>
 									<td>
 										<div class="">
-											<div class="label label-default"  style="width: 100%;">coming soon</div>
+											<div class="label label-default"  style="width: 100%;">{{ number_format($dashboard['dashboard']->seasonal_total_count) }}</div>
 										</div>
 									</td>
 								</tr>

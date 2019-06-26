@@ -54,7 +54,7 @@
                                                     <th>Vehicle Zone</th>
                                                     <th>Street</th>
                                                     <th>Duration</th>
-                                                    <th>Amount Paid</th>
+                                                    <th style="text-align: right">Amount Paid</th>
                                                     <th>Agent</th>
                                                     <th>Padlock No.</th>
                                                     <th>Status</th>
@@ -86,6 +86,14 @@
                                                 @endforeach()
 
                                                 </tbody>
+                                                <tfooter>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td style="text-align: right">Total Amount Paid : {{ number_format($total,2) }}</td>
+                                                </tfooter>
                                             </table>
 
                                         </div>

@@ -93,6 +93,14 @@
                                                             </tr>
                                                         @endforeach()
                                                         </tbody>
+                                                        <tfooter>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        <td style="text-align: right; color: #000;">Total Amount : {{ number_format($total,2) }}</td>
+                                                        </tfooter>
                                                     </table>
                                                 </div>
                                                 <div class="tab-pane" id="tab20">
@@ -142,6 +150,14 @@
                                                             </tr>
                                                         @endforeach()
                                                         </tbody>
+                                                        <tfooter>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td style="text-align: right; color: #000;">Total Amount : {{ number_format($total,2) }}</td>
+                                                        </tfooter>
                                                     </table>
                                                 </div>
                                                 <div class="tab-pane" id="tab21">
@@ -183,14 +199,22 @@
 
                                                                 <td>{{ $item->agent }}</td>
                                                                 <td>
-                                <span class="label label-success">
-                                    {{ $item->status }}
-                                </span>
+                                                                <span class="label label-success">
+                                                                    {{ $item->status }}
+                                                                </span>
                                                                 </td>
 
                                                             </tr>
                                                         @endforeach()
                                                         </tbody>
+                                                        <tfooter>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td style="text-align: right; color: #000;">Total Amount : {{ number_format($total,2) }}</td>
+                                                        </tfooter>
                                                     </table>
                                                 </div>
 
