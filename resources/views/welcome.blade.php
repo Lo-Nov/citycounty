@@ -6,7 +6,7 @@
 
 		<!-- START WIDGETS -->
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-6 col-sm-12">
             <?php
 
             $queried = $dashboard[ 'dashboard' ]->paid;
@@ -47,13 +47,11 @@
 						</div>
 
 					</div>
-					<div class="widget-controls">
-						<a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="top" title="Remove Widget"><span class="fa fa-times"></span></a>
-					</div>
+					
 				</div>
 				<!-- END WIDGET SLIDER -->
 			</div>
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-6 col-sm-12">
 
 				<!-- START WIDGET MESSAGES -->
 				<div class="widget widget-default widget-item-icon" onclick="location.href='#';">
@@ -65,14 +63,12 @@
 						<div class="widget-int num-count">{{ number_format($dashboard[ 'dashboard' ]->parking_total_revenue,2) }}</div>
 						<div class="widget-subtitle">Today total revenue combined</div>
 					</div>
-					<div class="widget-controls">
-						<a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="top" title="Remove Widget"><span class="fa fa-times"></span></a>
-					</div>
+					
 				</div>
 				<!-- END WIDGET MESSAGES -->
 
 			</div>
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-6 col-sm-12">
 
 				<!-- START WIDGET REGISTRED -->
 				<div class="widget widget-default widget-item-icon" onclick="location.href='#';">
@@ -84,21 +80,19 @@
                         <div class="widget-int num-count">{{ number_format($dashboard[ 'dashboard' ]->off_street_total_revenue,2) }}</div>
                         <div class="widget-subtitle">(Sunken, High Court and Country bus)</div>
                     </div>
-					<div class="widget-controls">
-						<a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="top" title="Remove Widget"><span class="fa fa-times"></span></a>
-					</div>
+					
 				</div>
 				<!-- END WIDGET REGISTRED -->
 
 			</div>
-			<div class="col-md-3">
+			<div class="col-lg-3 col-md-6 col-sm-12">
 
 				<!-- START WIDGET CLOCK -->
 				<div class="widget widget-info widget-padding-sm">
 					<div class="widget-big-int plugin-clock">00:00</div>
 					<div class="widget-subtitle plugin-date">Loading...</div>
 					<div class="widget-controls">
-						<a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="left" title="Remove Widget"><span class="fa fa-times"></span></a>
+						<a href="#" class="widget-control-right" data-toggle="tooltip" data-placement="left" title="Remove Widget"><span class="fa fa-times"></span></a>
 					</div>
 					<div class="widget-buttons widget-c3">
 						<div class="col">
@@ -119,7 +113,7 @@
 		<!-- END WIDGETS -->
 
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-lg-4 col-md-12 col-sm-12">
 
 				<!-- START USERS ACTIVITY BLOCK -->
 				<div class="panel panel-default">
@@ -148,7 +142,7 @@
 				</div>
 				<!-- END USERS ACTIVITY BLOCK -->
 			</div>
-			<div class="col-md-4">
+			<div class="col-lg-4 col-md-12 col-sm-12">
 
 				<!-- START VISITORS BLOCK -->
 				<div class="panel panel-default">
@@ -175,7 +169,7 @@
 				</div>
 				<!-- END VISITORS BLOCK -->
 			</div>
-			<div class="col-md-4">
+			<div class="col-lg-4 col-md-12 col-sm-12">
 				<!-- START PROJECTS BLOCK -->
 				<div class="panel panel-default">
 					<div class="panel-heading">
@@ -265,7 +259,7 @@
 		</div>
 
 		<div class="row">
-			<div class="col-md-8">
+			<div class="col-md-12 col-lg-8 col-sm-12">
 
 				<!-- START SALES BLOCK -->
 				<div class="panel panel-default">
@@ -350,7 +344,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-4">
+			<div class="col-md-12 col-lg-4 col-sm-12">
 
 				<!-- START PROJECTS BLOCK -->
 				<div class="panel panel-default">
