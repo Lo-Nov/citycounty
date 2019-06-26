@@ -62,7 +62,7 @@
                                                 </thead>
                                                 <tbody>
                                                 @php
-                                                    $total = isset($total) ? $total + $item->amountPaid : 0;
+                                                    $total = isset($total) ? $total + $item->amount_paid : 0;
                                                 @endphp
                                                 @foreach ($compliant->paginatedList as $key=>$item)
                                                     <tr>
@@ -79,9 +79,16 @@
                                                         <td>{{ date('d-m-Y g:i a', strtotime($item->query_data)) }}</td>
                                                     </tr>
                                                 @endforeach()
-
                                                 </tbody>
+                                                <tfooter>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td style="text-align: right;color:#000;">Total Amount: {{ number_format($total,2) }}</td>
+                                                </tfooter>
                                             </table>
+
 
                                         </div>
                                     </div>

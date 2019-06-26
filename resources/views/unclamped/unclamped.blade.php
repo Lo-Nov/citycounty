@@ -78,14 +78,19 @@
                                                         <span class="label label-success">
                                                             {{ $item->status }}
                                                         </span>
-                                                                                </td>
+                                                        </td>
                                                         <td>{{ date('d-m-Y g:i a', strtotime($item->query_time)) }}</td>
                                                     </tr>
                                                 @endforeach()
-
                                                 </tbody>
+                                                <tfooter>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td style="text-align: right;color:#000;">Total Amount: {{ number_format($total,2) }}</td>
+                                                </tfooter>
                                             </table>
-
                                         </div>
                                     </div>
                                     <!-- END DATATABLE EXPORT -->
