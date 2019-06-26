@@ -8,7 +8,7 @@
     <!-- SEARCH -->
     <li class="xn-search">
         <form role="form">
-            <input type="text" name="search" placeholder="Search..."/>
+            <input type="text" name="search" placeholder="Search..." class="form-control"/>
         </form>
     </li>
     <!-- END SEARCH -->
