@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- META SECTION -->
+ 
     <title>{{ config('global.siteTitle') }}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- CSS INCLUDE -->
     <link rel="stylesheet" type="text/css" id="theme" href="{{ asset('css/theme-default.css') }}"/>
+	 <link rel="stylesheet" type="text/css" id="theme" href="{{ asset('css/custom.css') }}"/>
     <!-- ICONS -->
     <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets/img/apple-icon.png') }}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('assets/images/county.png') }}">
@@ -39,7 +40,6 @@
 @include('message.message')
 
 
-<!-- START PRELOADS -->
 {{--<audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>--}}
 {{--<audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>--}}
 <!-- END PRELOADS -->
