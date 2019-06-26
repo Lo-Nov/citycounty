@@ -2,346 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d46ec8da-3fae-4968-92dc-2544527b7f98" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/parking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/parking.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomLoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomLoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DetailedController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FilterController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QueriesController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Toastr.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers1/Auth/ForgotPasswordController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers1/Auth/LoginController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers1/Auth/RegisterController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers1/Auth/ResetPasswordController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers1/Auth/VerificationController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers1/Controller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers1/CustomLoginController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers1/DashboardController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers1/DetailedController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers1/FilterController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers1/HomeController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers1/QueriesController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers1/Toastr.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/charts.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/charts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parking.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/custom.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/custom1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/demo.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/main.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/skins/navbar3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/skins/sidebar-nav-darkgray.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/vendor/animate/animate.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/DnNaiFloods1503u-1320x742.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/Naibobi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/Naibobi1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/car-packed -illustration.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/city.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/clamped.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/county.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/download.jfif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/free-video-dashboard-compressed.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/lion.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/logo/clipart-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/logo/clipart-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/logo/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/logo/logo_hr.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/logo/nationalbank.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/logo/revenue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/maxresdefault - Copy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/maxresdefault.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/nairobibg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/paid.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/paid_not_querried.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/powered_NBK-dark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/powered_NBK.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/powered_NBK.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/powered_nbk_center.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/powered_nbk_center1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/querry.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/to_be_clamped.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/unpaid.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/user.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/user1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/user2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/scripts/demo-mock.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/scripts/jquery.mockjax.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/scripts/jquery.vmap.sampledata.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/scripts/klorofilpro-common.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/Flot/jquery.flot.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/Flot/jquery.flot.pie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/Flot/jquery.flot.resize.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/Flot/jquery.flot.time.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap-colorpicker/img/bootstrap-colorpicker/alpha-horizontal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap-colorpicker/img/bootstrap-colorpicker/alpha.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap-colorpicker/img/bootstrap-colorpicker/hue-horizontal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap-colorpicker/img/bootstrap-colorpicker/hue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap-colorpicker/img/bootstrap-colorpicker/saturation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap-markdown/bootstrap-markdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap-markdown/bootstrap-markdown.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap-progressbar/js/bootstrap-progressbar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap-slider/bootstrap-slider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap-slider/slider.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap-tour/css/bootstrap-tour.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap-tour/js/bootstrap-tour.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap/fonts/glyphicons-halflings-regulard41d.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/chart-js/Chart.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/chartist/css/chartist-custom.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/chartist/js/chartist.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/clockpicker/bootstrap-clockpicker.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/clockpicker/bootstrap-clockpicker.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/datatables-colreorder/dataTables.colReorder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/datatables-tabletools/css/dataTables.tableTools.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/datatables-tabletools/images/collection.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/datatables-tabletools/images/collection_hover.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/datatables-tabletools/js/dataTables.tableTools.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/datatables/css-bootstrap/dataTables.bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/datatables/css-main/jquery.dataTables.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/datatables/images/sort_asc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/datatables/images/sort_asc_disabled.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/datatables/images/sort_both.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/datatables/images/sort_desc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/datatables/images/sort_desc_disabled.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/datatables/js-bootstrap/dataTables.bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/datatables/js-main/jquery.dataTables.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/dropify/css/dropify.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/dropify/fonts/dropify.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/dropify/fonts/dropify.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/dropify/fonts/dropify.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/dropify/fonts/dropify.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/dropify/js/dropify.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/dropzone/dropzone.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/dropzone/dropzone.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/flot.orderbars/jquery.flot.orderBars.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/flot.tooltip/jquery.flot.tooltip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/font-awesome/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/font-awesome/fonts/fontawesome-webfont3e6e.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/font-awesome/fonts/fontawesome-webfont3e6e.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/font-awesome/fonts/fontawesome-webfont3e6e.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/font-awesome/fonts/fontawesome-webfont3e6e.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/font-awesome/fonts/fontawesome-webfont3e6e.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/font-awesome/fonts/fontawesome-webfontd41d.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/fuelux/wizard/wizard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/hideshowpassword/hideShowPassword.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-appear/jquery.appear.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-mapael/js/jquery.mapael.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-mapael/js/maps/france_departments.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-mapael/js/maps/world_countries.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-mousewheel/jquery.mousewheel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-sparkline/js/jquery.sparkline.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui/jquery-ui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui/themes/base/images/ui-icons_444444_256x240.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui/themes/base/images/ui-icons_555555_256x240.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui/themes/base/images/ui-icons_777620_256x240.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui/themes/base/images/ui-icons_777777_256x240.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui/themes/base/images/ui-icons_cc0000_256x240.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui/themes/base/images/ui-icons_ffffff_256x240.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui/themes/base/jquery-ui.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui/ui/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui/ui/disable-selection.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui/ui/scroll-parent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui/ui/widget.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui/ui/widgets/mouse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery-ui/ui/widgets/sortable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery.maskedinput/jquery.maskedinput.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jquery/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jqvmap/jquery.vmap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jqvmap/jqvmap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jqvmap/maps/jquery.vmap.europe.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jqvmap/maps/jquery.vmap.russia.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jqvmap/maps/jquery.vmap.usa.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jqvmap/maps/jquery.vmap.world.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jstree/jstree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jstree/themes/default/32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jstree/themes/default/40px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jstree/themes/default/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/jstree/themes/default/throbber.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/justgage-toorshia/justgage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/markdown/markdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/moment/min/moment.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/nestable2/jquery.nestable.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/nestable2/jquery.nestable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/nouislider/css/nouislider.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/nouislider/js/nouislider.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/pace/pace.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/pace/themes/orange/pace-theme-minimal.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/parsleyjs/css/parsley.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/parsleyjs/js/parsley.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/pwstrength-bootstrap/pwstrength-bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/raphael/raphael.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/select2/css/select2.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/select2/js/select2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/slick/ajax-loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/slick/fonts/slick.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/slick/fonts/slick.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/slick/fonts/slick.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/slick/fonts/slick.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/slick/fonts/slickd41d.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/slick/slick-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/slick/slick.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/slick/slick.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/summernote/font/summernoted41d.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/summernote/font/summernotef534.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/summernote/font/summernotef534.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/summernote/font/summernotef534.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/summernote/summernote.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/summernote/summernote.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/sweetalert2/sweetalert2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/sweetalert2/sweetalert2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/switchery/switchery.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/switchery/switchery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/themify-icons/css/themify-icons.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/themify-icons/fonts/themify.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/themify-icons/fonts/themify.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/themify-icons/fonts/themify.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/themify-icons/fonts/themify.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/themify-icons/fonts/themifyd41d.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/to-markdown/to-markdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/toastr/toastr.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/toastr/toastr.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/wnumb/wNumb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/x-editable/bootstrap3-editable/css/bootstrap-editable.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/x-editable/bootstrap3-editable/img/clear.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/x-editable/bootstrap3-editable/img/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/x-editable/bootstrap3-editable/js/bootstrap-editable.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/x-editable/inputs-ext/address/address.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/x-editable/inputs-ext/address/address.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/x-editable/inputs-ext/typeaheadjs/lib/typeahead.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/x-editable/inputs-ext/typeaheadjs/lib/typeahead.js-bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/vendor/x-editable/inputs-ext/typeaheadjs/typeaheadjs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Agenterrors/500.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Agenterrors/backup.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Agenterrors/clampedAlert.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Agenterrors/error404.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Agenterrors/seasonalAlert.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Agenterrors/towedAlert.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Agenterrors/unclampAlert.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Agenterrors/unpaidAlert.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Agenterrors/untowedAlert.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/agent.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/alerts/clamped.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/alerts/paid.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/alerts/unclamp.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/alerts/unclamped.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/alerts/unpaid.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/all/all.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/attendants/admattendant.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/attendants/attendant.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/attendants/attendantfilter.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/attendants/moreAttendant.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/attendants/moreday.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/attendants/morestreets.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/attendants/morezones.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backchart.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/clamped/clamped.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/clamped/clamped.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/clamped/clampedAgent.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/clamped/clampedQuery.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/collection/collections.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/collection/daterangecollections.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/collection/detailedcollections.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cstreet/cstreet.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/czones/czones.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/daily/admindaily.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/daily/daily.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dueUnclamp/due_unclamp.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dueUnclamp/unclampAgent.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dueUnclamp/unclampQuery.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/agentclamped.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/agenttoclamp.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/agenttowed.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/agentunclamp.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/agentuntowed.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/alertclamp.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/alertpaid.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/alertpaidQ.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/clampError.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/clampQ.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/clampedE.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/paidAgent.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/tab.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/unclampE.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/unclampError.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/unclampedE.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/unclampedError.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/unique.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/finance/Parkingfinance.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/history/history.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/hour/adminhourfilter.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/hour/hourfilter.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/jaribu/test.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/location/adminlocation.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/location/location.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/paid/include.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/paid/pQueried.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/paid/paid.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/paid/paid1.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/paid/paidAgent.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partial/agentSidebar.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partial/backup.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partial/footer.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partial/head.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partial/rightsidebar.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partial/scripts.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partial/sidebar.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partial/topnav.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/queried/aQueried.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/queried/attQueries.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/queried/queried.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/queried/queriedAgent.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/seasonal/seasonal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/seasonal/seasonal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/seasonal/seasonalAgent.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/street/admstreet.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/street/street.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/towed/dueTowing.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/towed/towed.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/towed/towedAgent.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/towed/untowed.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/towed/untowedAgent.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/unclamped/unclamped.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/unclamped/unclamped.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/unclamped/unclampedAgent.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/unclamped/unclampedQuery.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/unique/unique.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/unpaid/clampQuery.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/unpaid/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/unpaid/unpaid.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/unpaid/unpaidAgent.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vFilter/vehicleFilter.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/waiver/approvewaiver.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/waiver/blankfile.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/waiver/waiver.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/waiver/waiver.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/waiver/waivererror.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -372,7 +34,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="179">
-      <file leaf-file-name="DashboardController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DashboardController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="589">
@@ -404,7 +66,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebar.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sidebar.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/sidebar/sidebar.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="273">
@@ -521,8 +183,8 @@
       <file leaf-file-name="welcome.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="219" column="62" selection-start-line="219" selection-start-column="62" selection-end-line="219" selection-end-column="62" />
+            <state relative-caret-position="527">
+              <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
               <folding>
                 <element signature="e#18036#18732#0#HTML" />
               </folding>
@@ -649,9 +311,9 @@
         <option value="$PROJECT_DIR$/resources/views/waiver/waiver.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/QueriesController.php" />
         <option value="$PROJECT_DIR$/resources/views/topnav/topnav.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" />
-        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/sidebar/sidebar.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" />
       </list>
     </option>
   </component>
@@ -1003,7 +665,7 @@
       <workItem from="1561221283923" duration="13383000" />
       <workItem from="1561275929345" duration="13339000" />
       <workItem from="1561293773307" duration="53240000" />
-      <workItem from="1561438684856" duration="37903000" />
+      <workItem from="1561438684856" duration="39744000" />
     </task>
     <task id="LOCAL-00001" summary="Some changes on some files">
       <created>1556362819880</created>
@@ -1121,7 +783,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="654416000" />
+    <option name="totallyTimeSpent" value="656257000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -1624,6 +1286,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/topnav/topnav.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
+          <folding>
+            <element signature="e#727#3043#0#HTML" />
+            <element signature="e#3092#5891#0#HTML" />
+            <element signature="n#div#1;n#div#1;n#li#4;n#ul#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sidebar/sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="129" column="208" selection-start-line="129" selection-start-column="208" selection-end-line="129" selection-end-column="208" />
+          <folding>
+            <element signature="e#8893#9203#0#HTML" />
+            <element signature="n#li#13;n#ul#0;n#div#0;n#!!top" />
+            <element signature="n#li#14;n#ul#0;n#div#0;n#!!top" />
+            <element signature="n#li#15;n#ul#0;n#div#0;n#!!top" />
+            <element signature="n#li#16;n#ul#0;n#div#0;n#!!top" />
+            <element signature="n#li#17;n#ul#0;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+          <folding>
+            <element signature="e#18036#18732#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
@@ -1650,43 +1349,6 @@
             <element signature="e#25820#26101#0#PHP" />
             <element signature="e#26106#27281#0#PHP" />
             <element signature="e#27286#28318#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="219" column="62" selection-start-line="219" selection-start-column="62" selection-end-line="219" selection-end-column="62" />
-          <folding>
-            <element signature="e#18036#18732#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/topnav/topnav.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="63" column="7" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
-          <folding>
-            <element signature="e#727#3043#0#HTML" />
-            <element signature="e#3092#5891#0#HTML" />
-            <element signature="n#div#1;n#div#1;n#li#4;n#ul#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/sidebar/sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="129" column="208" selection-start-line="129" selection-start-column="208" selection-end-line="129" selection-end-column="208" />
-          <folding>
-            <element signature="e#8893#9203#0#HTML" />
-            <element signature="n#li#13;n#ul#0;n#div#0;n#!!top" />
-            <element signature="n#li#14;n#ul#0;n#div#0;n#!!top" />
-            <element signature="n#li#15;n#ul#0;n#div#0;n#!!top" />
-            <element signature="n#li#16;n#ul#0;n#div#0;n#!!top" />
-            <element signature="n#li#17;n#ul#0;n#div#0;n#!!top" />
           </folding>
         </state>
       </provider>

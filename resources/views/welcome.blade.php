@@ -62,7 +62,7 @@
 					</div>
 					<div class="widget-data">
 						<div class="widget-title">Today Revenue</div>
-						<div class="widget-int num-count">{{ number_format($dashboard[ 'dashboard' ]->total_revenue,2) }}</div>
+						<div class="widget-int num-count">{{ number_format($dashboard[ 'dashboard' ]->parking_total_revenue,2) }}</div>
 						<div class="widget-subtitle">Today total revenue combined</div>
 					</div>
 					<div class="widget-controls">
@@ -79,11 +79,11 @@
 					<div class="widget-item-left">
 						<span class="fa fa-money"></span>
 					</div>
-					<div class="widget-data">
-						<div class="widget-title">Off-Street revenue</div>
-						<div class="widget-int num-count">{{ number_format($dashboard[ 'dashboard' ]->off_street_total_revenue,2) }}</div>
-						<div class="widget-subtitle">Off street total revenue</div>
-					</div>
+                    <div class="widget-data">
+                        <div class="widget-title">Off-Street revenue</div>
+                        <div class="widget-int num-count">{{ number_format($dashboard[ 'dashboard' ]->off_street_total_revenue,2) }}</div>
+                        <div class="widget-subtitle">(Sunken, High Court and Country bus)</div>
+                    </div>
 					<div class="widget-controls">
 						<a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="top" title="Remove Widget"><span class="fa fa-times"></span></a>
 					</div>
@@ -209,7 +209,7 @@
 								<tbody>
 								<tr>
 									<td><strong>On-Street (Daily Parking)</strong></td>
-									<td><span class="label label-success">{{ number_format( $dashboard[ 'dashboard' ]->daily_parking_revenue,2)  }}</span></td>
+									<td><span class="label label-success">{{ number_format( $dashboard[ 'dashboard' ]->onstreet_total_revenue,2)  }}</span></td>
 									<td>
 										<div class="">
 											<div class="label label-default"  style="width: 100%;">coming soon</div>
@@ -218,7 +218,7 @@
 								</tr>
 								<tr>
 									<td><strong>Off-Street (Sunken)</strong></td>
-									<td><span class="label label-warning">{{ number_format($dashboard[ 'dashboard' ]->off_street,2) }}</span></td>
+									<td><span class="label label-warning">{{ number_format($dashboard[ 'dashboard' ]->sunken_revenue,2) }}</span></td>
 									<td>
 										<div class="">
 											<div class="label label-info"  style="width: 100%;">{{ number_format($dashboard['dashboard']->sunken_count) }}</div>
